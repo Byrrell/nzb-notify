@@ -1,3 +1,5 @@
+[Original project.](https://github.com/caronc/nzb-notify)
+
 ## Changes over nzb-notify
 
 I have slightly modified this to check and automatically install dependencies for the sabnzbd implementation. Intended to be used for docker containers, so there is no need to manually install dependencies again.
