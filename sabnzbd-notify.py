@@ -22,6 +22,25 @@
 import subprocess
 import sys
 import os
+import importlib
+
+# Check for requirements. if not found, install
+def install_package(package):
+
+    # Check if package installed
+    nzbget_loader = importlib.util.find_spec(package)
+    found = nzbget_loader is not None
+
+    # If package not installed, install
+    if found == False:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+
+# Comment out as necessary
+install_package('apprise')
+#install_package('setuptools')
+install_package('pynzbget')
+#install_package('chardet')
+#install_package('six')
 
 try:
     from signal import SIGKILL
