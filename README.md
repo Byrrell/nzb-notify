@@ -1,4 +1,4 @@
-[Original project.](https://github.com/caronc/nzb-notify)
+[Original project](https://github.com/caronc/nzb-notify)
 
 ## Changes over nzb-notify
 
